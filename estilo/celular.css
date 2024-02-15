@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+------------------------------
+ Celular - 360px até 720px
+ Tablet - 768px até 1024px
+ laptop - 992px até 1366px
+telas grandes - 1080px até 1920px
+*/
+
+@media screen and (min-width:360px) and (max-width:720px) {
+    .pratos{
+        display: flex;
+        flex-direction: column;
+    }
+}
