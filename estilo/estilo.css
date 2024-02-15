@@ -10,6 +10,13 @@ body{
     background-color:#e7edeae1;
 }
 
+/*.teste{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 40px;
+    height: 100vh;
+}*/
+
 .topo{
     display: flex;
     align-items: center;
@@ -97,21 +104,111 @@ body{
 
 .pratos > div{
     width: 14em;
-    height: 17em;
-    background-color: black;
+    height: 18em;
+    background-color: rgb(255, 255, 255);
     margin-top: 1em;
     border-radius: 25px;
-    text-align: center;
-    color: white;
+    border: 2px solid black;
 }
 
-.prato1{
-    display: block;
+.pratos > .prato1 > .imagem{
     background: url("../imgs/comida.jfif"), no-repeat;
     background-size: cover;
-    width: 14em !important;
-    height: 8em !important;
+    width: 14em;
+    height: 8em;
     border-radius: 25px 25px 0px 0px;
+}
+
+.pratos > .prato2 > .imagem2{
+    background: url("../imgs/comida2.jfif"), no-repeat;
+    background-size: cover;
+    width: 14em;
+    height: 8em;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.pratos > .prato3 > .imagem3{
+    background: url("../imgs/comida3.jfif"), no-repeat;
+    background-size: cover;
+    width: 14em;
+    height: 8em;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.pratos > .prato4 > .imagem4{
+    background: url("../imgs/comida4.jfif"), no-repeat;
+    background-size: cover;
+    width: 14em;
+    height: 8em;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.uni{
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.364);
+    color: black;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    margin: 3px 128px 1px 11px;
+}
+
+.txt_p{
+    text-align: center;
+    margin-top: 6px;
+    text-indent: -23px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.preco{
+    margin-top: 23px;
+    margin-left: 11px;
+    font-size: larger;
+    text-align: left;
+}
+
+.coloca{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    left: 11em;
+    bottom: 27px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.coloca:hover{
+    transform: translate(-4px, -2px);
+    transition: 0.5s;
+}
+
+.final{
+    display: flex;
+    margin-top: 2em;
+    width: 90%;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.final>button{
+    cursor: pointer;
+    height: 30px;
+    width: 98px;
+    border: 1px solid #f00;
+    border-radius: 10px;
+    background-color: #ff00005d;
+}
+
+.final>button:hover{
+    border: 1px solid #ff00005d;
+    background-color: #f00;
+    color: white;
+
+    transition: 0.5s;
 }
 
 .rodaPe{
