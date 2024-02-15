@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+body{
+    background-color:#e7edeae1;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color:#fb0c06;
+}
+
+.topo > div{
+    padding: 5em;
+    cursor: pointer;
+}
+
+.topo > input[type = text]{
+    width: 60%;
+    height: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+    background-image: url("../imgs/lupa.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px;
+    padding-left: 24px;
+}
+
+.conteudo{
+    margin: auto;
+    width: 90%;
+    height: 32em;
+    background-color:white;
+}
+
+.conteudo > .cat{
+   text-align: center;
+}
+
+.container_cata{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.container_cata > img{
+    cursor: pointer;
+    background-color: #f54d0fc9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.container_cata > button{
+    cursor: pointer;
+    padding: 12px;
+    border: 2px solid rgba(235, 192, 192, 0.859);
+    margin: 0px 4px 0px 4px;
+    border-radius: 20px;
+    background-color: #f54d0fc9;
+    color: white;
+}
+
+.container_cata> .selecionado{
+    color: black;
+    background-color: #f00;
+    border-color: white;
+}
+
+.container_cata > .n_sele:hover{
+    color: black;
+    background-color: #f00;
+    border-color: white;
+
+    transform: translate(-4px, -2px);
+    transition: 0.5s;
+}
+
+.pratos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pratos > div{
+    width: 14em;
+    height: 17em;
+    background-color: black;
+    margin-top: 1em;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+}
+
+.prato1{
+    display: block;
+    background: url("../imgs/comida.jfif"), no-repeat;
+    background-size: cover;
+    width: 14em !important;
+    height: 8em !important;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.rodaPe{
+    width: 100%;
+    height: 3.2em;
+    background-color: rgba(55, 41, 41, 0.364);
+    margin-top: 6em;
+}
+
+.rodaPe > p{
+    text-align: center;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    text-indent: 5px;
+}
