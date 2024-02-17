@@ -10,12 +10,50 @@ body{
     background-color:#e7edeae1;
 }
 
-/*.teste{
+.abaLat{
     position: relative;
-    background-color: rgb(0, 0, 0);
-    width: 40px;
-    height: 100vh;
-}*/
+    background-color: rgb(255, 255, 255);
+    width: 17em;
+    height: 86.8em;
+    right: 17em;
+}
+
+.abaLat>img{
+    position: relative;
+    top: 37.5em;
+    left: 29px;
+}
+
+
+.abaLat>div{
+    cursor: pointer;
+    text-align: center;
+    margin-top: 36em;
+    height: 28px;
+}
+
+.abaLat>ul{
+    margin-top: 41em;
+    width: 17em;
+    height: 6em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.abaLat>ul>li{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.abaLat>ul>li:hover{
+    background-color: #8080803d;;
+}
+
+.abaLat_exibir{
+    right: 0em !important;
+    transition: all 0.5s;
+}
 
 .topo{
     display: flex;
@@ -27,8 +65,8 @@ body{
     background-color:#fb0c06;
 }
 
-.topo > div{
-    padding: 5em;
+.topo > .icones{
+    padding-right: 9em;
     cursor: pointer;
 }
 
@@ -37,12 +75,12 @@ body{
     height: 15px;
     padding: 10px;
     border-radius: 5px;
-
-    background-image: url("../imgs/lupa.png");
+    background-image: url(../imgs/lupa.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 20px;
-    padding-left: 24px;
+    padding-left: 18px;
+    margin-right: 184px;
 }
 
 .conteudo{

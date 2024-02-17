@@ -8,7 +8,7 @@
 telas grandes - 1080px até 1920px
 */
 
-@media screen and (min-width:360px) and (max-width:720px) {
+@media screen and (min-width:375px) and (max-width:642px) {
     .pratos{
         display: flex;
         flex-direction: column;
