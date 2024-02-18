@@ -18,18 +18,31 @@ body{
     right: 17em;
 }
 
+.abaLat_exibir{
+    right: 0em !important;
+    transition: all 0.5s;
+}
+
+.abaLat_remover{
+    right: 17em;
+    transition: all 0.5s;
+}
+
 .abaLat>img{
     position: relative;
     top: 37.5em;
     left: 29px;
 }
 
-
 .abaLat>div{
     cursor: pointer;
     text-align: center;
     margin-top: 36em;
     height: 28px;
+}
+
+.abaLat>div:hover{
+   text-decoration: underline;
 }
 
 .abaLat>ul{
@@ -48,11 +61,6 @@ body{
 
 .abaLat>ul>li:hover{
     background-color: #8080803d;;
-}
-
-.abaLat_exibir{
-    right: 0em !important;
-    transition: all 0.5s;
 }
 
 .topo{
@@ -75,10 +83,11 @@ body{
     height: 15px;
     padding: 10px;
     border-radius: 5px;
+
     background-image: url(../imgs/lupa.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 20px;
+    background-size: 22px;
     padding-left: 18px;
     margin-right: 184px;
 }
@@ -222,6 +231,41 @@ body{
 .coloca:hover{
     transform: translate(-4px, -2px);
     transition: 0.5s;
+}
+
+.contador{
+    position: relative;
+    left: 9em;
+    bottom: 27px;
+    width: 74px;
+    height: 30px;
+    border-radius: 9px;
+    border: 2px solid red;
+}
+
+.cont_adiciona{
+    cursor: pointer;
+    position: relative;
+    left: 63px;
+    bottom: -6px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.cont_retira{
+    cursor: pointer;
+    position: relative;
+    left: 3px;
+    bottom: -5px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.num_cont{
+    position: relative;
+    left: 22px;
+    bottom: -6px;
+    font-weight: bold;
 }
 
 .final{
