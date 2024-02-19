@@ -8,23 +8,25 @@
 
 body{
     background-color:#e7edeae1;
+    z-index: 1;
 }
 
 .abaLat{
+    z-index: 2;
     position: relative;
     background-color: rgb(255, 255, 255);
     width: 17em;
     height: 86.8em;
-    right: 17em;
+    right: 22em;
 }
 
 .abaLat_exibir{
-    right: 0em !important;
+    right: 3em !important;
     transition: all 0.5s;
 }
 
 .abaLat_remover{
-    right: 17em;
+    right: 22em;
     transition: all 0.5s;
 }
 
@@ -73,9 +75,17 @@ body{
     background-color:#fb0c06;
 }
 
-.topo > .icones{
-    padding-right: 9em;
+.topo > .icones1{
     cursor: pointer;
+    position: relative;
+    right: 2em;
+    top: 3px;
+}
+
+.topo > .icones2{
+    cursor: pointer;
+    position: relative;
+    right: 10em;
 }
 
 .topo > input[type = text]{
