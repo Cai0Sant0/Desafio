@@ -6,6 +6,14 @@ const btn_prato1 = document.querySelector("#b1");
 const btn_prato2 = document.querySelector("#b2");
 const btn_prato3 = document.querySelector("#b3");
 const btn_prato4 = document.querySelector("#b4");
+const produtos_selecionados = document.querySelector(".prod_sele");
+const preco1 = document.querySelector("#p1");
+const preco2 = document.querySelector("#p2");
+const preco3 = document.querySelector("#p3");
+const preco4 = document.querySelector("#p4");
+
+
+let prod_sele = 0;
 
 btn_menu.addEventListener("click",(evento)=>{
    abaLateral.classList.add("abaLat_exibir");
@@ -23,6 +31,9 @@ window.addEventListener("click",()=>{
 });
 
 btn_prato1.addEventListener("click",(evento)=>{ // BOTÃO 01
+  prod_sele++;
+  produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
+
   let pai = evento.target.parentNode;
   pai.style.border = "2px solid red";
   pai.removeChild(btn_prato1);
@@ -60,6 +71,9 @@ btn_prato1.addEventListener("click",(evento)=>{ // BOTÃO 01
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato1);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
   }
  });
 
@@ -68,6 +82,9 @@ btn_prato1.addEventListener("click",(evento)=>{ // BOTÃO 01
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato1);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
  });
 
  div.appendChild(btn_adicona);
@@ -78,6 +95,9 @@ btn_prato1.addEventListener("click",(evento)=>{ // BOTÃO 01
 });
 
 btn_prato2.addEventListener("click",(evento)=>{ // BOTÃO 02
+  prod_sele++;
+  produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
+
   let pai = evento.target.parentNode;
   pai.style.border = "2px solid red";
   pai.removeChild(btn_prato2);
@@ -115,6 +135,9 @@ btn_prato2.addEventListener("click",(evento)=>{ // BOTÃO 02
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato2);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
   }
  });
 
@@ -123,6 +146,9 @@ btn_prato2.addEventListener("click",(evento)=>{ // BOTÃO 02
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato2);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
  });
 
  div.appendChild(btn_adicona);
@@ -133,6 +159,9 @@ btn_prato2.addEventListener("click",(evento)=>{ // BOTÃO 02
 });
 
 btn_prato3.addEventListener("click",(evento)=>{ // BOTÃO 03
+  prod_sele++;
+  produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
+
   let pai = evento.target.parentNode;
   pai.style.border = "2px solid red";
   pai.removeChild(btn_prato3);
@@ -170,6 +199,9 @@ btn_prato3.addEventListener("click",(evento)=>{ // BOTÃO 03
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato3);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
   }
  });
 
@@ -178,6 +210,9 @@ btn_prato3.addEventListener("click",(evento)=>{ // BOTÃO 03
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato3);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
  });
 
  div.appendChild(btn_adicona);
@@ -188,6 +223,9 @@ btn_prato3.addEventListener("click",(evento)=>{ // BOTÃO 03
 });
 
 btn_prato4.addEventListener("click",(evento)=>{ // BOTÃO 04
+  prod_sele++;
+  produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
+
   let pai = evento.target.parentNode;
   pai.style.border = "2px solid red";
   pai.removeChild(btn_prato4);
@@ -225,6 +263,9 @@ btn_prato4.addEventListener("click",(evento)=>{ // BOTÃO 04
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato4);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
   }
  });
 
@@ -233,6 +274,9 @@ btn_prato4.addEventListener("click",(evento)=>{ // BOTÃO 04
    pai.removeChild(lixeira);
    pai.style.border = "2px solid black";
    pai.appendChild(btn_prato4);
+
+   prod_sele--;
+   produtos_selecionados.innerHTML= `Produtos selecionados : ${prod_sele}`;
  });
 
  div.appendChild(btn_adicona);
@@ -241,10 +285,4 @@ btn_prato4.addEventListener("click",(evento)=>{ // BOTÃO 04
  pai.appendChild(lixeira);
  pai.appendChild(div);
 });
-
-
-
-
-
-
 
