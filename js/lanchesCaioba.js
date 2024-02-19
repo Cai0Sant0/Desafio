@@ -285,4 +285,3 @@ btn_prato4.addEventListener("click",(evento)=>{ // BOTÃO 04
  pai.appendChild(lixeira);
  pai.appendChild(div);
 });
-
