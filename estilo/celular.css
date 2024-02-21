@@ -71,3 +71,80 @@ telas grandes - 1080px até 1920px
         flex-direction: column;
     }
 }
+
+@media screen and (min-width:283px) and (max-width:603px)  {
+    
+    .topo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 21em;
+        height: 70px;
+        background-color: #fb0c06;
+    }
+
+    .topo > .icones1 {
+        cursor: pointer;
+        position: relative;
+        right: 12em;
+        top: 3px;
+    }
+
+    .topo > .icones2 {
+        cursor: pointer;
+        position: relative;
+        right: 4em;
+    }
+
+    .topo > input[type = text]{
+        width: 6em;
+        height: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        background-image: url(../imgs/lupa.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 18px;
+        padding-left: 18px;
+        position: relative;
+        right: 10em;
+        margin-right: 0px;
+    }
+
+    .container_cata {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .conteudo {
+        margin: auto;
+        width: 119vw;
+        height: 93em;
+        background-color: white;
+    }
+
+    .pratos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .final {
+        display: flex;
+        margin-top: 2em;
+        width: 95%;
+        height: 100px;
+        justify-content: space-around;
+    }
+
+    .rodaPe {
+        width: 118%;
+        height: 3.2em;
+        background-color: rgba(55, 41, 41, 0.364);
+        margin-top: 6em;
+    }
+}
