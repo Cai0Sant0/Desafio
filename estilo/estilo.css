@@ -371,3 +371,53 @@ body{
     font-weight: bold;
     text-indent: 5px;
 }
+
+@media screen and (max-width:1920px) {
+
+    .rodaPe {
+        width: 100%;
+        height: 3.2em;
+        background-color: rgba(55, 41, 41, 0.364);
+        margin-top: 19.5em;
+    }
+    
+    .abaLat {
+        z-index: 2;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 17em;
+        height: 113.8em;
+        right: 25em;
+    }
+    
+    .abaLat_exibir {
+        right: 8em !important;
+        transition: all 0.5s;
+    }
+    
+    .abaLat_remover {
+        right: 26em;
+        transition: all 0.5s;
+    }
+    
+    .abaLat>ul {
+        margin-top: 55em;
+        width: 17em;
+        height: 6em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .abaLat>div {
+        cursor: pointer;
+        text-align: center;
+        margin-top: 48em;
+        height: 28px;
+    }
+
+    .abaLat>img {
+        position: relative;
+        top: 49.5em;
+        left: 24px;
+    }
+    
+}
