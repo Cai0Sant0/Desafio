@@ -8,76 +8,11 @@
 telas grandes - 1080px até 1920px
 */
 
-@media screen and (min-width:375px) and (max-width:642px) {
-
-    .abaLat>ul>li {
-        cursor: pointer;
-        font-size: 25px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .abaLat>img {
-        position: relative;
-        top: 37.5em;
-        left: 51px;
-    }
-
-    .abaLat>div {
-        cursor: pointer;
-        text-align: center;
-        margin-top: 36em;
-        margin-left: 45px;
-        height: 28px;
-    }
-
-    .topo > input[type = text]{
-        width: 60%;
-        height: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        background-image: url(../imgs/lupa.png);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: 18px;
-        padding-left: 18px;
-        position: relative;
-        right: 10em;
-        margin-right: 0px;
-    }
-
-    .topo > .icones1 {
-        cursor: pointer;
-        position: relative;
-        right: 11em;
-        top: 3px;
-    }
-
-    .topo > .icones2 {
-        cursor: pointer;
-        position: relative;
-        right: 5em ;
-    }
-
-    .conteudo {
-        margin: auto;
-        width: 90%;
-        height: 92em;
-        background-color: white;
-    }
-
-    .pratos{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width:283px) and (max-width:603px)  {
+@media screen and (min-width:500px) and (max-width:732px)  {
     
     .topo {
         display: flex;
         align-items: center;
-        flex-direction: row;
         justify-content: center;
         width: 21em;
         height: 70px;
