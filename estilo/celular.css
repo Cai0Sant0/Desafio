@@ -11,7 +11,7 @@ telas grandes - 1080px até 1920px
 @media screen and (min-width:360px) and (max-width:734.40px)  {
 
     .abaLat{
-        height: 93em;
+        height: 106em !important;
     }
 
     .abaLat_exibir{
@@ -27,15 +27,15 @@ telas grandes - 1080px até 1920px
     }
 
     .abaLat > ul{
-        margin-top: 45em 
+        margin-top: 52em 
     }
 
     .abaLat > div{
-        margin-top: 38em;
+        margin-top: 41em;
     }
 
     .abaLat > img {
-        top: 39.5em;
+        top: 42.5em;
     }
     
     .topo {
@@ -91,10 +91,26 @@ telas grandes - 1080px até 1920px
         background-color: white;
     }
 
-
     .pratos{
         display: flex;
         flex-direction: column;
+    }
+
+    .uni {
+        padding: 2px;
+        background-color: rgba(255, 0, 0, 0.364);
+        color: black;
+        border: 1px solid #f00;
+        border-radius: 5px;
+        margin: 3px 128px 1px 11px;
+    }
+
+    .txt_p {
+        text-align: center;
+        margin-top: 6px;
+        text-indent: -23px;
+        margin-left: 5px;
+        font-size: 13px;
     }
 
     .final {
