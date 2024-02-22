@@ -10,6 +10,10 @@ telas grandes - 1080px até 1920px
 
 @media screen and (min-width:360px) and (max-width:734.40px)  {
 
+    .abaLat{
+        height: 93em;
+    }
+
     .abaLat_exibir{
         position: fixed !important;
         right: 14em !important;
@@ -20,6 +24,18 @@ telas grandes - 1080px até 1920px
         position: relative;
         right: 22em;
         transition: all 1s;
+    }
+
+    .abaLat > ul{
+        margin-top: 45em 
+    }
+
+    .abaLat > div{
+        margin-top: 38em;
+    }
+
+    .abaLat > img {
+        top: 39.5em;
     }
     
     .topo {
@@ -70,7 +86,7 @@ telas grandes - 1080px até 1920px
 
     .conteudo {
         margin: auto;
-        width: 81vw;
+        width: 30em;
         height: 93em;
         background-color: white;
     }
@@ -90,80 +106,9 @@ telas grandes - 1080px até 1920px
     }
 
     .rodaPe {
-        width: 100%;
+        width: 30em;
         height: 3.2em;
         background-color: rgba(55, 41, 41, 0.364);
         margin-top: 6em;
-    }
-}
-
-@media screen and (min-width:283px) and (max-width:360px) {
-
-    .topo > input[type = text]{
-        width: 6em;
-        height: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        background-image: url(../imgs/lupa.png);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: 18px;
-        padding-left: 18px;
-        position: relative;
-        right: 10em;
-        margin-right: 0px;
-    }
-
-
-    .topo > .icones1 {
-        cursor: pointer;
-        position: relative;
-        right: 10em;
-        top: 3px;
-    }
-
-    .topo > .icones2 {
-        cursor: pointer;
-        position: relative;
-        right: 7em;
-    }
-
-    .conteudo {
-        margin: auto;
-        width: 100vw;
-        height: 106em;
-        background-color: white;
-    }
-
-    .container_cata {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 57px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .container_cata > img {
-        cursor: pointer;
-        background-color: #f54d0fc9;
-        padding: 10px;
-        border-radius: 8px;
-        margin-right: 10px;
-        width: 20px;
-    
-    }
-
-    .pratos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .final {
-        display: flex;
-        margin-top: 2em;
-        width: 100%;
-        height: 100px;
-        justify-content: space-around;
     }
 }
