@@ -11,7 +11,7 @@ telas grandes - 1080px até 1920px
 @media screen and (min-width:360px) and (max-width:734.40px)  {
 
     .abaLat{
-        height: 106em !important;
+        height: 200em !important;
     }
 
     .abaLat_exibir{
