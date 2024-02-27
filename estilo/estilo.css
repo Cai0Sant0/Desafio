@@ -376,52 +376,367 @@ body{
 
 
 
-@media screen and (min-width:1920px) {
+@media screen and (min-width:1537px) and (max-width:1920px) {
 
-    .rodaPe {
-        width: 100%;
-        height: 3.2em;
-        background-color: rgba(55, 41, 41, 0.364);
-        margin-top: 19.5em;
-    }
-    
-    .abaLat {
+    .abaLat{
         z-index: 2;
         position: relative;
         background-color: rgb(255, 255, 255);
         width: 17em;
-        height: 113.8em;
-        right: 25em;
+        height: 114.9em;
+        right: 26em;
     }
     
-    .abaLat_exibir {
+    .abaLat_exibir{
         right: 8em !important;
         transition: all 0.5s;
     }
     
-    .abaLat_remover {
-        right: 26em;
+    .abaLat_remover{
+        right: 25em;
         transition: all 0.5s;
     }
     
-    .abaLat>ul {
-        margin-top: 55em;
+    .abaLat>img{
+        position: relative;
+        top: 50.5em;
+        left: 29px;
+    }
+    
+    .abaLat>div{
+        cursor: pointer;
+        text-align: center;
+        margin-top: 49em;
+        height: 28px;
+    }
+    
+    .abaLat>div:hover{
+       text-decoration: underline;
+    }
+    
+    .abaLat>ul{
+        margin-top: 56em;
         width: 17em;
         height: 6em;
         font-family: Arial, Helvetica, sans-serif;
     }
     
-    .abaLat>div {
+    .abaLat>ul>li{
         cursor: pointer;
+        font-size: 30px;
+        padding: 10px;
         text-align: center;
-        margin-top: 48em;
-        height: 28px;
     }
-
-    .abaLat>img {
+    
+    .abaLat>ul>li:hover{
+        background-color: #8080803d;;
+    }
+    
+    .topo{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+        background-color:#fb0c06;
+    }
+    
+    .topo > .icones1{
+        cursor: pointer;
         position: relative;
-        top: 49.5em;
-        left: 24px;
+        right: 2em;
+        top: 3px;
+    }
+    
+    .topo > .icones2{
+        cursor: pointer;
+        position: relative;
+        right: 10em;
+    }
+    
+    .topo > input[type = text]{
+        width: 60%;
+        height: 15px;
+        padding: 10px;
+        border-radius: 5px;
+    
+        background-image: url(../imgs/lupa.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 18px;
+        padding-left: 18px;
+        margin-right: 184px;
+    }
+    
+    .conteudo{
+        margin: auto;
+        width: 90%;
+        height: 32em;
+        background-color:white;
+    }
+    
+    .conteudo > .cat{
+       text-align: center;
+    }
+    
+    .container_cata{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+    }
+    
+    .container_cata > img{
+        cursor: pointer;
+        background-color: #f54d0fc9;
+        padding: 10px;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+    
+    .container_cata > button{
+        cursor: pointer;
+        padding: 12px;
+        border: 2px solid rgba(235, 192, 192, 0.859);
+        margin: 0px 4px 0px 4px;
+        border-radius: 20px;
+        background-color: #f54d0fc9;
+        color: white;
+    }
+    
+    .container_cata> .selecionado{
+        color: black;
+        background-color: #f00;
+        border-color: white;
+    }
+    
+    .container_cata > .n_sele:hover{
+        color: black;
+        background-color: #f00;
+        border-color: white;
+    
+        transform: translate(-4px, -2px);
+        transition: 0.5s;
+    }
+    
+    .pratos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .pratos > div{
+        width: 14em;
+        height: 18em;
+        background-color: rgb(255, 255, 255);
+        margin-top: 1em;
+        border-radius: 25px;
+        border: 2px solid black;
+    }
+    
+    .pratos > .prato1 > .imagem{
+        background: url("../imgs/comida.jfif"), no-repeat;
+        background-size: cover;
+        width: 14em;
+        height: 8em;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .pratos > .prato2 > .imagem2{
+        background: url("../imgs/comida2.jfif"), no-repeat;
+        background-size: cover;
+        width: 14em;
+        height: 8em;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .pratos > .prato3 > .imagem3{
+        background: url("../imgs/comida3.jfif"), no-repeat;
+        background-size: cover;
+        width: 14em;
+        height: 8em;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .pratos > .prato4 > .imagem4{
+        background: url("../imgs/comida4.jfif"), no-repeat;
+        background-size: cover;
+        width: 14em;
+        height: 8em;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .uni{
+        padding: 5px;
+        background-color: rgba(255, 0, 0, 0.364);
+        color: black;
+        border: 1px solid #f00;
+        border-radius: 5px;
+        margin: 3px 128px 1px 11px;
+    }
+    
+    .txt_p{
+        text-align: center;
+        margin-top: 6px;
+        text-indent: -23px;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    
+    .preco{
+        margin-top: 23px;
+        margin-left: 11px;
+        font-size: larger;
+        text-align: left;
+    }
+    
+    .coloca{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(255, 0, 0);
+        left: 14em;
+        bottom: 27px;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    .coloca:hover{
+        transform: translate(-4px, -2px);
+        transition: 0.5s;
+    }
+    
+    .lixeira{
+        cursor: pointer;
+        position: relative;
+        left: 121px;
+        background-image: url(../imgs/lixeira.png);
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contador{
+        position: relative;
+        left: 9em;
+        bottom: 27px;
+        width: 74px;
+        height: 30px;
+        border-radius: 9px;
+        border: 2px solid red;
+    }
+    
+    .cont_adiciona{
+        cursor: pointer;
+        position: relative;
+        left: 63px;
+        bottom: -6px;
+        font-weight: bold;
+        background-color: white;
+    }
+    
+    .cont_retira{
+        cursor: pointer;
+        position: relative;
+        left: 3px;
+        bottom: -5px;
+        font-weight: bold;
+        background-color: white;
+    }
+    
+    .num_cont{
+        position: relative;
+        left: 22px;
+        bottom: -6px;
+        font-weight: bold;
+    }
+    
+    .lixeira2{
+        cursor: pointer;
+        position: relative;
+        left: 104px;
+        bottom: 28px;
+        background-image: url(../imgs/lixeira.png);
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contador2{
+        position: relative;
+        left: 8em;
+        bottom: 54px;
+        width: 74px;
+        height: 30px;
+        border-radius: 9px;
+        border: 2px solid red;
+    }
+    
+    .cont_adiciona2{
+        cursor: pointer;
+        position: relative;
+        left: 63px;
+        bottom: -6px;
+        font-weight: bold;
+        background-color: white;
+    }
+    
+    .cont_retira2{
+        cursor: pointer;
+        position: relative;
+        left: 3px;
+        bottom: -5px;
+        font-weight: bold;
+        background-color: white;
+    }
+    
+    .num_cont2{
+        position: relative;
+        left: 22px;
+        bottom: -6px;
+        font-weight: bold;
+    }
+    
+    .final{
+        display: flex;
+        margin-top: 2em;
+        width: 90%;
+        height: 100px;
+        justify-content: space-around;
+    }
+    
+    .final>button{
+        cursor: pointer;
+        height: 30px;
+        width: 98px;
+        border: 1px solid #f00;
+        border-radius: 10px;
+        background-color: #ff00005d;
+    }
+    
+    .final>button:hover{
+        border: 1px solid #ff00005d;
+        background-color: #f00;
+        color: white;
+    
+        transition: 0.5s;
+    }
+    
+    .rodaPe{
+        width: 100%;
+        height: 3.2em;
+        background-color: rgba(55, 41, 41, 0.364);
+        margin-top: 20.1em;
+    }
+    
+    .rodaPe > p{
+        text-align: center;
+        padding: 1em;
+        font-size: 16px;
+        font-weight: bold;
+        text-indent: 5px;
     }
     
 }
